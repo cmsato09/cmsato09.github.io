@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="/theme/pygments/github.min.css">
+
+
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/solid.css">
+
+
+
+
+
+  
+
+
+<meta name="author" content="cmsato09" />
+<meta name="description" content="Post #12 Making a virtual environment in VSCode I was attempting to get Pelican static site generator to work on VSCode so I could move this blog to a static site that I put together (put together as in &#39;I set-up and didn&#39;t fork over from Github&#39;). Planning to move …" />
+<meta name="keywords" content="VSCode, pelican">
+
+
+<meta property="og:site_name" content="Novice Programmer Journey from Zero"/>
+<meta property="og:title" content="VSCode venv struggle"/>
+<meta property="og:description" content="Post #12 Making a virtual environment in VSCode I was attempting to get Pelican static site generator to work on VSCode so I could move this blog to a static site that I put together (put together as in &#39;I set-up and didn&#39;t fork over from Github&#39;). Planning to move …"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="/venv-struggle.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2021-01-15 00:00:00-08:00"/>
+<meta property="article:modified_time" content="2021-01-17 00:00:00-08:00"/>
+<meta property="article:author" content="/author/cmsato09.html">
+<meta property="article:section" content="VSCode"/>
+<meta property="article:tag" content="VSCode"/>
+<meta property="article:tag" content="pelican"/>
+<meta property="og:image" content="/icons/rook_clipart.png">
+
+  <title>Novice Programmer Journey from Zero &ndash; VSCode venv struggle</title>
+
+</head>
+<body class="light-theme">
+  <aside>
+    <div>
+      <a href="">
+        <img src="/icons/rook_clipart.png" alt="Novice Programmer Journey from Zero" title="Novice Programmer Journey from Zero">
+      </a>
+
+      <h1>
+        <a href="">Novice Programmer Journey from Zero</a>
+      </h1>
+
+<p>beginning a programming blog</p>
+
+      <nav>
+        <ul class="list">
+
+
+
+            <li>
+              <a target="_self" href="https://getpelican.com/" >Pelican</a>
+            </li>
+            <li>
+              <a target="_self" href="https://www.python.org/" >Python.org</a>
+            </li>
+            <li>
+              <a target="_self" href="https://palletsprojects.com/p/jinja/" >Jinja2</a>
+            </li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+          <li>
+            <a  class="sc-You can add links in your config file" href="#" target="_blank">
+              <i class="fab fa-You can add links in your config file"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="sc-Another social link" href="#" target="_blank">
+              <i class="fab fa-Another social link"></i>
+            </a>
+          </li>
+      </ul>
+    </div>
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href="">Home</a>
+
+      <a href="/archives.html">Archives</a>
+      <a href="/categories.html">Categories</a>
+      <a href="/tags.html">Tags</a>
+
+
+    </nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="venv-struggle">VSCode venv struggle</h1>
+    <p>
+      Posted on Fri 15 January 2021 in <a href="/category/vscode.html">VSCode</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <h2>Post #12 Making a virtual environment in VSCode</h2>
+<p>I was attempting to get <a href="https://blog.getpelican.com/">Pelican static site generator</a> to work on VSCode so I could move this blog to a static site that I put together (put together as in 'I set-up and didn't fork over from Github'). </p>
+<h2>Planning to move static sites</h2>
+<p>The Jekyll website this blog is currently on uses <a href="http://www.jekyllnow.com/">Jekyll-Now</a>. The advantage of using Jekyll-Now that drew me to it in the first place was the promise of 'eliminating up front set-up.' In the description of Jekyll-Now they say you don't need to use the command line or install/configure ruby and promised of having a blog in no time. You can also host Jekyll on Github pages and control most of your content and license compared to blogging website like Wordpress. Github pages is free to host so you don't have to worry about paying for a domain name. So from what I gathered from reading, it was good for a programming beginner to start a blog while learning and Github pages was free to use that didn't give away too many rights like for Wordpress. </p>
+<p>Although Jekyll-Now had been good for the eleven posts I have, I wanted to be able to customize this blog a bit more. Therefore, I'm building one from scratch. Since I'm still working with Python, I went with Pelican. Simple as that. From what I've read at this point, it looks like Jekyll and Pelican are equal with customizability and ease of use, but I just wanted to use a framework that uses my preferred language.</p>
+<h2>venv problem</h2>
+<p>Back to the problem I pointed out in the title, I was having problems with using the venv file I made for the Pelican website folder. I would create my virtual environment in the folder I wanted using git bash using <code>py -m venv venv</code> and then opened the folder in VSCode. I then started the <code>pelican-quickstart</code> guide and got all the necessary files into the project folder. After looking through some of the python files that the pelican quickstart generated, I noticed that the task.py file needed the <a href="http://www.pyinvoke.org/">invoke</a> library. I go ahead and try <code>pip install invoke</code> in the terminal in VSCode and it worked, but I notice the VSCode was still marking invoke as not imported. I didn't understand why it wasn't working until I realized the terminal wasn't using the virtual environment python.exe and running python from the global folder usually found in C:\Users\username\AppData\Local\Programs\Python\Python39 (this <a href="https://www.youtube.com/watch?v=CQDQWHnCqOE">youtube video</a> also helped me realize the global folder problem). I had pip install invoke in the global folder and pelican wasn't even in the venv library! That took awhile to figure out and probably obvious to any vetran programmer who set-up a lot of virtual environments. Always read the terminal output message to figure out what is going on is the key take away message. </p>
+<h3>Activating the venv on VSCode</h3>
+<p>I read that you must 'activate' the environment using the terminal from <a href="https://code.visualstudio.com/docs/python/environments">VSCode documentation</a> and it still didn't click with me. I did figure out how to select the python interpreter, but it still didn't work (I kept checking if the terminal used the virtual environment with <code>pip list</code> to see if it still pointed to the global python folder). I went and searched for a tutorial to see if there was a dumbed down version of VSCode documentation and found a <a href="https://rasulkireev.com/django-venv/">django tutorial</a>. This tutorial states to activate the venv, type <code>.\venv\scripts\activate.bat</code>. Lo and behold there is a activate.bat file in the directory, however, the terminal still spits out a error. </p>
+<blockquote>
+<p>File C:/Users/username/ssg_pelican_blog/venv/Scripts/activate.ps1 cannot be loaded because running scripts is disabled on this system.</p>
+</blockquote>
+<p>I found on <a href="https://stackoverflow.com/questions/56199111/visual-studio-code-cmd-error-cannot-be-loaded-because-running-scripts-is-disabl">stackoverflow</a> via searching the error message, which cites this <a href="https://github.com/Microsoft/vscode-python/issues/2559#issuecomment-478381840">github issue</a> on how to fix this VSCode problem. You have to edit the settings.json file to include the following line:</p>
+<div class="highlight"><pre><span></span><code><span class="err">&quot;terminal.integrated.shellArgs.windows&quot;: [&quot;-ExecutionPolicy&quot;, &quot;Bypass&quot;]</span>
+</code></pre></div>
+
+
+<p>At this point, I'm just ready for this problem to be solved and wasn't concerned about why this occurs. After adding the line in the setttings.json file and restarting VSCode, I was able to see a green (venv) in the terminal signalling that I was indeed using the virtual environment instead of the global python file. </p>
+<h2>To summarize</h2>
+<p>When you can't use your virtual environment in VSCode terminal, do the following</p>
+<ol>
+<li>
+<p>Double check if you are actually using your venv folder by typing <code>pip list</code> in the terminal. If you recently made your virtual environment, it shouldn't have many packages. If are a lot of packages installed, you are probably in the global python folder.</p>
+</li>
+<li>
+<p>type in the terminal <code>.\venv\Scripts\activate</code> if on Windows to activate virtual environment. </p>
+</li>
+<li>
+<p>If message 'running scripts is disabled on this system' pops up, add <code>"terminal.integrated.shellArgs.windows": ["-ExecutionPolicy", "Bypass"]</code> into the settings.json file. Settings.json file can be accessed using the Command Palette located in the View tab (or Ctrl+Shift+p) and searching for 'settings json', then select 'Preferences: Open Settings (JSON)'. </p>
+</li>
+<li>
+<p>Close VSCode and restart the program. Run <code>.\venv\Scripts\activate</code> again in the terminal. A green '(venv)' should appear in the terminal.</p>
+</li>
+</ol>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="/tag/vscode.html">VSCode</a>
+      <a href="/tag/pelican.html">pelican</a>
+    </p>
+  </div>
+
+
+
+
+
+</article>
+
+    <footer>
+<p>&copy;  </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Novice Programmer Journey from Zero ",
+  "url" : "",
+  "image": "/icons/rook_clipart.png",
+  "description": ""
+}
+</script>
+
+
+</body>
+</html>

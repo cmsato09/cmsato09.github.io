@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="/theme/pygments/github.min.css">
+
+
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/solid.css">
+
+
+
+
+
+  
+
+
+<meta name="author" content="cmsato09" />
+<meta name="description" content="Post #9 SQL I started a Udemy course learning SQL during winter break 2020 since I wanted to learn how to make a database (My goal is to learn back-end programming). The syllabus I&#39;m following recommended the Udemy course The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert by …" />
+<meta name="keywords" content="sql, Udemy">
+
+
+<meta property="og:site_name" content="Novice Programmer Journey from Zero"/>
+<meta property="og:title" content="Starting SQL"/>
+<meta property="og:description" content="Post #9 SQL I started a Udemy course learning SQL during winter break 2020 since I wanted to learn how to make a database (My goal is to learn back-end programming). The syllabus I&#39;m following recommended the Udemy course The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert by …"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="/udemy-sql-course.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2021-01-04 00:00:00-08:00"/>
+<meta property="article:modified_time" content="2021-01-17 00:00:00-08:00"/>
+<meta property="article:author" content="/author/cmsato09.html">
+<meta property="article:section" content="SQL"/>
+<meta property="article:tag" content="sql"/>
+<meta property="article:tag" content="Udemy"/>
+<meta property="og:image" content="/icons/rook_clipart.png">
+
+  <title>Novice Programmer Journey from Zero &ndash; Starting SQL</title>
+
+</head>
+<body class="light-theme">
+  <aside>
+    <div>
+      <a href="">
+        <img src="/icons/rook_clipart.png" alt="Novice Programmer Journey from Zero" title="Novice Programmer Journey from Zero">
+      </a>
+
+      <h1>
+        <a href="">Novice Programmer Journey from Zero</a>
+      </h1>
+
+<p>beginning a programming blog</p>
+
+      <nav>
+        <ul class="list">
+
+
+
+            <li>
+              <a target="_self" href="https://getpelican.com/" >Pelican</a>
+            </li>
+            <li>
+              <a target="_self" href="https://www.python.org/" >Python.org</a>
+            </li>
+            <li>
+              <a target="_self" href="https://palletsprojects.com/p/jinja/" >Jinja2</a>
+            </li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+          <li>
+            <a  class="sc-You can add links in your config file" href="#" target="_blank">
+              <i class="fab fa-You can add links in your config file"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="sc-Another social link" href="#" target="_blank">
+              <i class="fab fa-Another social link"></i>
+            </a>
+          </li>
+      </ul>
+    </div>
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href="">Home</a>
+
+      <a href="/archives.html">Archives</a>
+      <a href="/categories.html">Categories</a>
+      <a href="/tags.html">Tags</a>
+
+
+    </nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="udemy-sql-course">Starting SQL</h1>
+    <p>
+      Posted on Mon 04 January 2021 in <a href="/category/sql.html">SQL</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <h2>Post #9 SQL</h2>
+<p>I started a Udemy course learning SQL during winter break 2020 since I wanted to learn how to make a database (My goal is to learn back-end programming). The <a href="https://www.reddit.com/r/learnprogramming/comments/i9vuhr/i_wrote_a_syllabus_for_learning_python_and_django/">syllabus</a> I'm following recommended the Udemy course <a href="https://www.udemy.com/course/the-ultimate-mysql-bootcamp-go-from-sql-beginner-to-expert/">The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert</a> by Colt Steele. At this point, I have not taken a follow-along programming course and usually read and try out a programming exercise. I have watched some youtube videos if there was a topic I didn't understand by just reading. </p>
+<h3>Is it this course for beginners?</h3>
+<p>This course is totally for beginners in SQL, but probably not for beginners just starting to program. I took this course as a relative novice in programming, but I can see someone who may need to figure out how to talk to a database before knowing basic programming and go straight into SQL. Comparing SQL and python, SQL is simpler than python. </p>
+<p>The course is 20 hours or so long and gets straight to SQL programming. The instructor recommends to use <a href="https://ide.goorm.io/">goormIDE</a>, a cloud-based IDE, to start out so that the student doesn't have to wrestle with setting up MySQL on their own machine and run into unforseen problems the virtual teacher can't fix. The set-up was pretty simple and they had their own recommended quick settings. Five minutes later, I am already creating my first database. </p>
+<h3>Topics</h3>
+<p>So far I've learned how to:
+* Create a database and a table with specified datatypes for columns using <code>CREATE</code>. Insert some data into said table.
+* Read info using <code>SELECT</code> and refine selection using <code>DISTINCT</code>, <code>ORDER BY</code>, <code>LIMIT</code>, and <code>LIKE</code>
+* Updating an entry 
+* Delete information from the table using <code>DELETE</code> and <code>DROP</code>
+* String functions such as <code>CONCAT</code>, <code>SUBSTRING</code>, and <code>REPLACE</code>
+* Date time functions</p>
+<p>I haven't done too much with it and haven't done anything complicated yet. Towards the end of the course, it covers how to make a Instagram clone and I'm excited about that. After getting the basics, I would like to figure out how to insert a lot of data at once if said data was already in a excel table and how to insert unicode characters like Japanese characters. </p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="/tag/sql.html">sql</a>
+      <a href="/tag/udemy.html">Udemy</a>
+    </p>
+  </div>
+
+
+
+
+
+</article>
+
+    <footer>
+<p>&copy;  </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Novice Programmer Journey from Zero ",
+  "url" : "",
+  "image": "/icons/rook_clipart.png",
+  "description": ""
+}
+</script>
+
+
+</body>
+</html>

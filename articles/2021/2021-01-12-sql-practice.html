@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="/theme/pygments/github.min.css">
+
+
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/solid.css">
+
+
+
+
+
+  
+
+
+<meta name="author" content="cmsato09" />
+<meta name="description" content="Post #10 Udemy MySQL bootcamp course Continuing from the previous post, I got through most of The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert. In the previous post, I went through some of the basic SQL commands on creating, inserting, and viewing data. Other topics Logical operators -- these …" />
+<meta name="keywords" content="sql, Udemy">
+
+
+<meta property="og:site_name" content="Novice Programmer Journey from Zero"/>
+<meta property="og:title" content="Beginning SQL cont."/>
+<meta property="og:description" content="Post #10 Udemy MySQL bootcamp course Continuing from the previous post, I got through most of The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert. In the previous post, I went through some of the basic SQL commands on creating, inserting, and viewing data. Other topics Logical operators -- these …"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="/sql-practice.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2021-01-12 00:00:00-08:00"/>
+<meta property="article:modified_time" content="2021-01-17 00:00:00-08:00"/>
+<meta property="article:author" content="/author/cmsato09.html">
+<meta property="article:section" content="SQL"/>
+<meta property="article:tag" content="sql"/>
+<meta property="article:tag" content="Udemy"/>
+<meta property="og:image" content="/icons/rook_clipart.png">
+
+  <title>Novice Programmer Journey from Zero &ndash; Beginning SQL cont.</title>
+
+</head>
+<body class="light-theme">
+  <aside>
+    <div>
+      <a href="">
+        <img src="/icons/rook_clipart.png" alt="Novice Programmer Journey from Zero" title="Novice Programmer Journey from Zero">
+      </a>
+
+      <h1>
+        <a href="">Novice Programmer Journey from Zero</a>
+      </h1>
+
+<p>beginning a programming blog</p>
+
+      <nav>
+        <ul class="list">
+
+
+
+            <li>
+              <a target="_self" href="https://getpelican.com/" >Pelican</a>
+            </li>
+            <li>
+              <a target="_self" href="https://www.python.org/" >Python.org</a>
+            </li>
+            <li>
+              <a target="_self" href="https://palletsprojects.com/p/jinja/" >Jinja2</a>
+            </li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+          <li>
+            <a  class="sc-You can add links in your config file" href="#" target="_blank">
+              <i class="fab fa-You can add links in your config file"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="sc-Another social link" href="#" target="_blank">
+              <i class="fab fa-Another social link"></i>
+            </a>
+          </li>
+      </ul>
+    </div>
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href="">Home</a>
+
+      <a href="/archives.html">Archives</a>
+      <a href="/categories.html">Categories</a>
+      <a href="/tags.html">Tags</a>
+
+
+    </nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="sql-practice">Beginning SQL cont.</h1>
+    <p>
+      Posted on Tue 12 January 2021 in <a href="/category/sql.html">SQL</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <h2>Post #10 Udemy MySQL bootcamp course</h2>
+<p>Continuing from the previous post, I got through most of <a href="https://www.udemy.com/course/the-ultimate-mysql-bootcamp-go-from-sql-beginner-to-expert/">The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert</a>. In the previous post, I went through some of the basic SQL commands on creating, inserting, and viewing data.</p>
+<h3>Other topics</h3>
+<ul>
+<li>Logical operators -- these were similar to all python logical operators so easy to understand. </li>
+<li>Table relations by <code>JOIN</code><ul>
+<li>One-to-Many -- one column in one table related to many columns in another table</li>
+<li>Many-to-Many -- one table connecting at least two different tables together and acting as a bridge</li>
+</ul>
+</li>
+</ul>
+<p>Logical operators section had some functions that I hadn't seen in python like the <code>BETWEEN</code> operator and <code>CASE</code> statements (which are similar to if-else statements).
+Join tables was interesting to learn as the course used more real-world examples. For the one-to-many tables example, a customers table and orders table was created to show that a customer can have multiple orders, but a order can't usually have multple customers. I learned about <code>FOREIGN KEY</code> for creating these tables and I learned how to use <code>INNER JOIN</code>, <code>LEFT JOIN</code>, and <code>RIGHT JOIN</code> to print out info from two different tables. 
+In the many-to-many tables example, I worked with a tv series data table and reviewers table that was connected by a reviews table. It was a code-along with exercises to print out specific outputs from the tables provided. </p>
+<p>Finally, a instagram clone with very basic features was created with multiple tables (users, photos, comments, likes, followers, and hashtags) to do more exercises with <code>JOIN</code>. Exercises consisted of getting certain outputs like 'find the most liked photo and the user who posted it' and 'top 5 commonly used hashtags.' </p>
+<p>I have not done the last 3 sections of this course since it is about making a webapp using Node.js. I don't know any javascript and I would still like to focus primarily on one programming language, python. I think I'll try doing the last few sections later after becoming more proficient in python or when I have more interest in front-end. </p>
+<h3>Verdict</h3>
+<p>The Ultimate MySQL Bootcamp was a good introductory course in SQL. I did learn how to use SQL, but I wouldn't call myself a expert on it (definitely still a beginner), but I feel more confident about writing SQL code for datatables I may see in the future. I didn't feel like I learned about MySQL though. The set-up was already sort of taken care of by goormIDE and the only command I used was <code>mysql-ctl cli</code>. I think the last 3 sections with Node.js would've covered more on MySQL set-up and using it together with a different programming language. 
+I still think this was a good $11-12 investment. The course was easy to understand and the exercises were helpful. I think I now know enough to branch out and look for how to use SQL with python. </p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="/tag/sql.html">sql</a>
+      <a href="/tag/udemy.html">Udemy</a>
+    </p>
+  </div>
+
+
+
+
+
+</article>
+
+    <footer>
+<p>&copy;  </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Novice Programmer Journey from Zero ",
+  "url" : "",
+  "image": "/icons/rook_clipart.png",
+  "description": ""
+}
+</script>
+
+
+</body>
+</html>
