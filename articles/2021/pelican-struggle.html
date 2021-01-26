@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="/theme/pygments/github.min.css">
+
+
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/solid.css">
+
+
+
+
+
+  
+
+
+<meta name="author" content="cmsato09" />
+<meta name="description" content="Post #13 Setting up Pelican After finallly understanding what was wrong with how I was using the virtual environment, I thought it wouldn&#39;t be too difficult getting this pelican blog up and running. I was wrong. Pelican quickstart with v4.5.4 Installing pelican wasn&#39;t too difficult and the pelican …" />
+<meta name="keywords" content="pelican">
+
+
+<meta property="og:site_name" content="Novice Programmer Journey from Zero"/>
+<meta property="og:title" content="Wrestling with Pelican part 1"/>
+<meta property="og:description" content="Post #13 Setting up Pelican After finallly understanding what was wrong with how I was using the virtual environment, I thought it wouldn&#39;t be too difficult getting this pelican blog up and running. I was wrong. Pelican quickstart with v4.5.4 Installing pelican wasn&#39;t too difficult and the pelican …"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="/articles/2021/pelican-struggle.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2021-01-22 00:00:00-08:00"/>
+<meta property="article:modified_time" content="2021-01-23 00:00:00-08:00"/>
+<meta property="article:author" content="/author/cmsato09.html">
+<meta property="article:section" content="pelican"/>
+<meta property="article:tag" content="pelican"/>
+<meta property="og:image" content="/images/rook_clipart.png">
+
+  <title>Novice Programmer Journey from Zero &ndash; Wrestling with Pelican part 1</title>
+
+</head>
+<body class="light-theme">
+  <aside>
+    <div>
+      <a href="">
+        <img src="/images/rook_clipart.png" alt="Novice Programmer Journey from Zero" title="Novice Programmer Journey from Zero">
+      </a>
+
+      <h1>
+        <a href="">Novice Programmer Journey from Zero</a>
+      </h1>
+
+<p>beginning a programming blog</p>
+
+      <nav>
+        <ul class="list">
+
+
+              <li>
+                <a target="_self"
+                   href="/pages/about.html#about">
+                  ABOUT
+                </a>
+              </li>
+
+            <li>
+              <a target="_self" href="https://getpelican.com/" >Pelican</a>
+            </li>
+            <li>
+              <a target="_self" href="https://www.python.org/" >Python.org</a>
+            </li>
+            <li>
+              <a target="_self" href="https://palletsprojects.com/p/jinja/" >Jinja2</a>
+            </li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+          <li>
+            <a  class="sc-You can add links in your config file" href="#" target="_blank">
+              <i class="fab fa-You can add links in your config file"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="sc-Another social link" href="#" target="_blank">
+              <i class="fab fa-Another social link"></i>
+            </a>
+          </li>
+      </ul>
+    </div>
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href="">Home</a>
+
+      <a href="/archives.html">Archives</a>
+      <a href="/categories.html">Categories</a>
+      <a href="/tags.html">Tags</a>
+
+
+    </nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="pelican-struggle">Wrestling with Pelican part 1</h1>
+    <p>
+      Posted on Fri 22 January 2021 in <a href="/category/pelican.html">pelican</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <h2>Post #13 Setting up Pelican</h2>
+<p>After finallly understanding what was wrong with how I was using the virtual environment, I thought it wouldn't be too difficult getting this pelican blog up and running. I was wrong.</p>
+<h3>Pelican quickstart with v4.5.4</h3>
+<p>Installing pelican wasn't too difficult and the <a href="https://docs.getpelican.com/en/4.5.4/index.html">pelican documentation</a> is pretty straight-forward. There are many websites that show how to quickly get a basic pelican static page up and running like this <a href="https://medium.com/@acalamea/step-by-step-guide-to-setup-a-web-site-using-pelican-and-gitpages-5de976ae44cb">step-by-step guide</a> and <a href="https://opensource.com/article/19/1/getting-started-pelican">getting started guide</a>. More resource list at <a href="https://www.fullstackpython.com/pelican.html">Full Stack Python's pelican blog post</a>.</p>
+<p>This blog post mainly covers some of the problems I encountered and how the start-up went. I will link sources to show what directions I followed. </p>
+<p>Typing <code>pelican-quickstart</code> in the terminal after installing pelican starts the project creation which asks some questions and sets up the initial skeleton files in the project folder. </p>
+<blockquote>
+<p>Welcome to pelican-quickstart v4.5.4.</p>
+<p>This script will help you create a new Pelican-based website.</p>
+<p>Please answer the following questions so this script can generate the files needed by Pelican.</p>
+<p>Where do you want to create your new web site? [.]<br>
+What will be the title of this web site? Novice Programmer Journey from Zero<br>
+Who will be the author of this web site? cmsato09<br>
+What will be the default language of this web site? [English]<br>
+Do you want to specify a URL prefix? e.g., https://example.com   (Y/n) n<br>
+Do you want to enable article pagination? (Y/n) Y<br>
+How many articles per page do you want? [10] 10<br>
+What is your time zone? [Europe/Paris] US/Pacific<br>
+Do you want to generate a tasks.py/Makefile to automate generation and publishing? (Y/n) Y<br>
+Do you want to upload your website using FTP? (y/N) N<br>
+Do you want to upload your website using SSH? (y/N) N<br>
+Do you want to upload your website using Dropbox? (y/N) N<br>
+Do you want to upload your website using S3? (y/N) N<br>
+Do you want to upload your website using Rackspace Cloud Files? (y/N) N<br>
+Do you want to upload your website using GitHub Pages? (y/N) y<br>
+Is this your personal page (username.github.io)? (y/N) y<br>
+Done. Your new project is available at C:\filepathway<br></p>
+</blockquote>
+<p>I didn't understand most of these questions, but this blog post from <a href="http://archerimagine.com/articles/pelican/helloworld-pelican-quickstart.html">Archer Imagine</a> covers what the questions mean. There are some descrepancies with the article due to being a different version of pelican. 
+Once you answer the questions, the following files and folders are generated. Folder hierarchy copied from <a href="https://docs.getpelican.com/en/latest/install.html#kickstart-your-site">here</a> in the documentation.</p>
+<blockquote>
+<p>project_folder/<br>
+|-- content<br>
+|-- output<br>
+|-- tasks.py<br>
+|-- Makefile<br>
+|-- pelicanconf.py<br>
+|-- publishconf.py<br></p>
+</blockquote>
+<p>The content folder is where you save your markdown or reStructuredText files.<br>
+The output folder is where the html files are generated, which are then used to publish your website. pelicanconf.py is an important file that configures how your website looks.<br>
+I'm actually not sure what the tasks.py, Makefile, and publishconf.py files do since I have't touched them. At the moment, pelicanconf.py is the really important file. You will have to generate your own .gitignore, readme.mk, requirement.txt, etc. </p>
+<p>This blog post gets quite long so I've divided it. Continue to part 2</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="/tag/pelican.html">pelican</a>
+    </p>
+  </div>
+
+
+
+
+
+</article>
+
+    <footer>
+<p>&copy;  </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Novice Programmer Journey from Zero ",
+  "url" : "",
+  "image": "/images/rook_clipart.png",
+  "description": ""
+}
+</script>
+
+
+</body>
+</html>

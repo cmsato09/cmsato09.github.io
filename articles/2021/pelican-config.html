@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="/theme/pygments/github.min.css">
+
+
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/solid.css">
+
+
+
+
+
+  
+
+
+<meta name="author" content="cmsato09" />
+<meta name="description" content="Post #14 Pelican configuration The initial set-up of pelican wasn&#39;t the difficult part. You can get a basic static site up and running, but I wanted to get fancy with some of the configurations. Below are the main configurations I messed with before deploying my static site on github pages …" />
+<meta name="keywords" content="pelican, configuration">
+
+
+<meta property="og:site_name" content="Novice Programmer Journey from Zero"/>
+<meta property="og:title" content="Wrestling with Pelican part 2"/>
+<meta property="og:description" content="Post #14 Pelican configuration The initial set-up of pelican wasn&#39;t the difficult part. You can get a basic static site up and running, but I wanted to get fancy with some of the configurations. Below are the main configurations I messed with before deploying my static site on github pages …"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="/articles/2021/pelican-config.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2021-01-22 00:00:00-08:00"/>
+<meta property="article:modified_time" content="2021-01-25 00:00:00-08:00"/>
+<meta property="article:author" content="/author/cmsato09.html">
+<meta property="article:section" content="pelican"/>
+<meta property="article:tag" content="pelican"/>
+<meta property="article:tag" content="configuration"/>
+<meta property="og:image" content="/images/rook_clipart.png">
+
+  <title>Novice Programmer Journey from Zero &ndash; Wrestling with Pelican part 2</title>
+
+</head>
+<body class="light-theme">
+  <aside>
+    <div>
+      <a href="">
+        <img src="/images/rook_clipart.png" alt="Novice Programmer Journey from Zero" title="Novice Programmer Journey from Zero">
+      </a>
+
+      <h1>
+        <a href="">Novice Programmer Journey from Zero</a>
+      </h1>
+
+<p>beginning a programming blog</p>
+
+      <nav>
+        <ul class="list">
+
+
+              <li>
+                <a target="_self"
+                   href="/pages/about.html#about">
+                  ABOUT
+                </a>
+              </li>
+
+            <li>
+              <a target="_self" href="https://getpelican.com/" >Pelican</a>
+            </li>
+            <li>
+              <a target="_self" href="https://www.python.org/" >Python.org</a>
+            </li>
+            <li>
+              <a target="_self" href="https://palletsprojects.com/p/jinja/" >Jinja2</a>
+            </li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+          <li>
+            <a  class="sc-You can add links in your config file" href="#" target="_blank">
+              <i class="fab fa-You can add links in your config file"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="sc-Another social link" href="#" target="_blank">
+              <i class="fab fa-Another social link"></i>
+            </a>
+          </li>
+      </ul>
+    </div>
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href="">Home</a>
+
+      <a href="/archives.html">Archives</a>
+      <a href="/categories.html">Categories</a>
+      <a href="/tags.html">Tags</a>
+
+
+    </nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="pelican-config">Wrestling with Pelican part 2</h1>
+    <p>
+      Posted on Fri 22 January 2021 in <a href="/category/pelican.html">pelican</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <h2>Post #14 Pelican configuration</h2>
+<p>The initial set-up of pelican wasn't the difficult part. You can get a basic static site up and running, but I wanted to get fancy with some of the configurations. Below are the main configurations I messed with before deploying my static site on github pages.</p>
+<h3>pelicanconf.py</h3>
+<p>Just looking at the <a href="https://docs.getpelican.com/en/latest/settings.html">settings documentation</a> was intimidating for someone who hasn't coded for very long. There were so many configuration settings and some with little explanation of what they do. At this point, I could get a very basic pelican static site up and running, but confused on how to customize it to my own liking. Therefore, I had to look at other people's pelican static sites and see what they had in their configuration python file. </p>
+<h4>pelican themes</h4>
+<p>Pelican comes pre-installed with two themes called 'notmyidea' and 'simple'. In pelicanconf.py file, simply add <code>THEME = 'nameoftheme'</code> to change the theme, provided the theme is already installed.<a href="https://docs.getpelican.com/en/latest/settings.html#themes">pelicanconfi.py theme setting documentation</a>
+To download already existing pelican themes, go to <a href="https://github.com/getpelican/pelican-themes">getpelican/pelican-themes repository</a> and clone one of the themes you like. To view most of the themes, got to <a href="http://www.pelicanthemes.com/">http://www.pelicanthemes.com/</a>. </p>
+<p>After picking and cloning a theme to your PC, you can install it into your pelican library in your virtual environment or global python folder. Use the <code>pelican-theme</code> command line tool and type <code>pelican-themes --install /filepath of cloned theme on pc</code> <a href="https://docs.getpelican.com/en/latest/pelican-themes.html#installing-themes">pelican themes install documentation</a>. Then, your theme will be in <em>.\venv\Lib\site-packages\pelican\themes</em> folder if installed on a virtual environment. You should be able to see that the theme is properly installed by typing <code>pelican-themes --list</code> in the command line <a href="https://docs.getpelican.com/en/latest/pelican-themes.html#listing-the-installed-themes">--list documentation</a>.</p>
+<p>For this blog, I chose to use the <a href="https://github.com/alexandrevicenzi/Flex/tree/ef20ea1fb3af763e23179a9a08cc9c40260eee52">Flex theme</a> since it looked nice, has good features, and looks like it is updated. </p>
+<h4>Main menu</h4>
+<p>The main menu feature gives a menu at the top of your page. I thought it would be nice for people to search for blogposts by the categories and tags I had created. 
+<img alt="main menu look" src="/images/2021-01-21-main_menu look.PNG"> </p>
+<p>To add the main menu, add the following to your pelicanconf.py file. </p>
+<div class="highlight"><pre><span></span><code><span class="err">MAIN_MENU = True</span>
+<span class="err">MENUITEMS = ((&quot;Archives&quot;, &quot;/archives&quot;), (&quot;Categories&quot;, &quot;/categories&quot;), (&quot;Tags&quot;, &quot;/tags&quot;),)</span>
+</code></pre></div>
+
+
+<p>For some reason, my HOME button doesn't work, so I need to figure out why. </p>
+<h4>Structuring content folder with sub-folders</h4>
+<p>The file organization isn't a configuration issue, but will be one later when html pages are created in the output folder. <br>
+I did not like the initial content folder structure where all your markdown files live in the content folder by default. You have to make your own folder structure within the content folder.<br>
+Below is my folder structure after reading through and figuring it out from the documentation.<br></p>
+<blockquote>
+<p>project_folder/<br>
+|-- content<br>
+&emsp;|-- articles<br>
+&emsp;|&emsp;|-- 2020<br>
+&emsp;|&emsp;|&emsp;|-- article1.md<br>
+&emsp;|&emsp;|&emsp;|-- article2.md<br>
+&emsp;|&emsp;|-- 2021<br>
+&emsp;|&emsp;&nbsp;&emsp;|-- article3.md<br>
+&emsp;|&emsp;&nbsp;&emsp;|-- article4.md<br>
+&emsp;|-- icons<br>
+&emsp;|&emsp;|-- picture1.png<br>
+&emsp;|-- images<br>
+&emsp;|-- pages<br>
+&emsp;&nbsp;&emsp;|-- about.md<br></p>
+</blockquote>
+<p>Within the content folder, I created 4 subfolders: articles, icons, images, and pages. The two most important folders are the articles and pages.<br>
+The <a href="https://docs.getpelican.com/en/latest/content.html?highlight=folder#">'Writing Content'</a> section in the documentation shows how you can use folders within the content folder and I just wanted to explain a bit more on how this relates to the pelicanconf.py file later. <br></p>
+<p>The articles folder is where all the blogposts markdown files live and I further divided them by a year folder. I didn't want to look at hundreds of posts in one folder so a year subfolder seemed appropriate.<br> 
+The <a href="https://docs.getpelican.com/en/latest/content.html?highlight=folder#pages">pages</a> folder is reserved for static pages that don't change as often like a About or Contact page.<br>
+After creating these folders and populating them with markdown files, it is important to make sure that pelican can find those files in the proper directories. </p>
+<h4>set path content directory</h4>
+<p>For pelican to find the markdown files, you must include the following configuration in the pelicanconf.py file and explanations can be found in the <a href="https://docs.getpelican.com/en/latest/settings.html#basic-settings">Settings</a> section of the documentation.<br> 
+<code>PATH =</code> should be set to your content folder <br>
+<code>ARTICLE_PATHS = ['article_folder_name']</code> In my case, 'article_folder_name' is 'articles'.<br>
+<code>PAGE_PATHS = ['page_folder_name']</code> In my case, 'page_folder_name' is 'pages'.<br>
+These configuration commands tell that the markdown files are in these folder directories. </p>
+<h4>Generate HTML files in output folder and publish on Github pages</h4>
+<p><a href="https://docs.getpelican.com/en/latest/publish.html">Publishing documentation</a><br>
+The markdown files can not be used to display your website, it first must be converted to HTML. After adding your Markdown files in the content folder, type <code>pelican</code> into the command line to convert markdown files to html files and generate them into the output folder. After processing, a message like the one below should show.</p>
+<blockquote>
+<p>Done: Processed 14 articles, 0 drafts, 1 page, 0 hidden pages and 0 draft pages in 1.20 seconds.<br></p>
+</blockquote>
+<p>If there is an error, it may be related to the config file or the metadata on the markdown file. <br>
+Once everything is generated, you can preview the whole website using <code>pelican --listen</code> command, which hosts the files in a built-in webserver. To view, go to <a href="https://localhost:8000/">https://localhost:8000/</a> on a web browser after the <code>pelican --listen</code> command. To stop hosting, go to the command line and press CTRL+c.<br>
+If an edit is made in the markdown file, you must regenerate the html files, therefore, you must type the <code>pelican</code> command again before doing <code>pelican --listen</code>.</p>
+<h5>HTML file generation</h5>
+<p>The default save as configuration for html files cause all html files to be saved in the root output folder. It does not reflect how you organized your files in the content folder. To reflect the content folder organization, you must have the following commands in the pelicanconf.py file. (<a href="https://docs.getpelican.com/en/latest/settings.html#url-settings">Documentation of URL settings</a> explains more)<br>
+The <code>ARTICLE_SAVE_AS</code> configuration controls how a html file is saved in the output folder.<br>
+<code>ARTICLE_SAVE_AS = 'articles/{date:%Y}/{slug}.html'</code> is my current configuration. Specifying 'articles' creates a articles folder. The next subfolder '{date:%Y}' creates a year folder. This doesn't have to be done and all articles can be saved in the articles folder, but this is my personal preference.<br>
+The final section is the html file name. I wasn't sure what 'slug' meant and had to <a href="https://yoast.com/slug/">look it up</a>. From what I understand, a slug is part of the url that explains the page content in simple terms and important for search engine optimization. At this point, I'm just trying to make easily identifiable html file names so they are similar to the title of the blog article. A classic 'I'll figure it out later' topic. </p>
+<h5>Publish to Github pages</h5>
+<p>Saving all your work in Github and hosting on Github is the goal here and it was a bit confusing to me. At first, I thought the markdown files were the webpages, until I figured out the html pages in the output was being displayed in the preview. So do you save everything onto your github.io repository? Not exactly. Documentation has a section on <a href="https://docs.getpelican.com/en/latest/tips.html?highlight=github%20pages#publishing-to-github">publishing on Github</a>. They recommend you to push the contents of the output directory into a gh-pages branch in the repository. <br>
+Documentation says to use <code>ghp-import</code> module. The following commands in the command line after html file generation with <code>pelican</code> can help. I followed the 'Project Pages' instructions since I had problems with using SSH required in the 'User Pages' instructions. I don't know why, but it just didn't work. </p>
+<div class="highlight"><pre><span></span><code><span class="n">ghp</span><span class="o">-</span><span class="kn">import</span> <span class="nn">output</span> <span class="o">-</span><span class="n">b</span> <span class="n">gh</span><span class="o">-</span><span class="n">pages</span> <span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+<span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">gh</span><span class="o">-</span><span class="n">pages</span><span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+</code></pre></div>
+
+
+<p>In the Github respository settings, scroll down to the Github pages section. Change the source branch to the branch that has all of your html files. If you followed the ghp-import instructions, you should have named the branch gh-pages.<br>
+I saved my markdown files and the rest of the python files into another branch in the same github.io repository. This way, I have my html files in the gh-pages branch and the markdown in the default branch. I recommend making a .gitignore file so that you don't push your virtual environment and ouput folder into the markdown branch.</p>
+<h5>404 File not found when clicking article</h5>
+<p>After pushing my html pages into gh-pages branch in my github.io repository, I still had a problem with the articles. I got a 404 file not found error when I clicked on my posts. I didn't understand the problem for a few days. I looked through other people's pelican repository, specifically their pelicanconf.py file and it hit me. The <code>ARTICLE_URL</code> configuration has to be the same as the article folder path! I had thought the article url could be different as the article save as path. Once I had <code>ARTICLE_URL = ARTICLE_SAVE_AS</code>, the articles showed back up! I was a little sad it took a couple days to figure that out. </p>
+<h4>Future work</h4>
+<p>What I want to work on in the future:</p>
+<ul>
+<li>
+<p>add search bar</p>
+</li>
+<li>
+<p>make sure home button goes to a home page</p>
+</li>
+<li>
+<p>explore plug-ins</p>
+</li>
+</ul>
+<p>posts for another day...</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="/tag/pelican.html">pelican</a>
+      <a href="/tag/configuration.html">configuration</a>
+    </p>
+  </div>
+
+
+
+
+
+</article>
+
+    <footer>
+<p>&copy;  </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Novice Programmer Journey from Zero ",
+  "url" : "",
+  "image": "/images/rook_clipart.png",
+  "description": ""
+}
+</script>
+
+
+</body>
+</html>
