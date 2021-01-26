@@ -13,18 +13,19 @@ TIMEZONE = 'US/Pacific'
 
 DEFAULT_LANG = 'en'
 
-SITELOGO = '/icons/rook_clipart.png'
+SITELOGO = '/images/rook_clipart.png'
 THEME = 'Flex'
-DISPLAY_PAGES_ON_MENU = False
-USE_FOLDER_AS_CATEGORY = True
+DISPLAY_PAGES_ON_MENU = True
+#USE_FOLDER_AS_CATEGORY = True
 MAIN_MENU = True
 
 PATH = 'content'
-STATIC_PATHS = ['icons','images']
+STATIC_PATHS = ['icons','images',]
 ARTICLE_PATHS = ['articles']
-ARTICLE_SAVE_AS = 'articles/{date:%Y}/{date:%Y-%m-%d}-{slug}.html'
+ARTICLE_SAVE_AS = 'articles/{date:%Y}/{slug}.html'
+ARTICLE_URL = ARTICLE_SAVE_AS
 PAGE_PATHS = ['pages']
-
+RELATIVE_URLS = False
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
