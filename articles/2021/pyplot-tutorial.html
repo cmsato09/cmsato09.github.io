@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="/theme/pygments/github.min.css">
+
+
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/solid.css">
+
+
+
+
+
+  
+
+
+<meta name="author" content="cmsato09" />
+<meta name="description" content="Post #15 Pyplot tutorial I actually learned how to use some of the basics of pyplot last week, but this blog post is a little delayed due to the previous long Pelican posts. For my current job, we are creating plots from csv files and would like to display them …" />
+<meta name="keywords" content="matplotlib, pyplot, tutorial">
+
+
+<meta property="og:site_name" content="Novice Programmer Journey from Zero"/>
+<meta property="og:title" content="Matplotlib pyplots tutorial"/>
+<meta property="og:description" content="Post #15 Pyplot tutorial I actually learned how to use some of the basics of pyplot last week, but this blog post is a little delayed due to the previous long Pelican posts. For my current job, we are creating plots from csv files and would like to display them …"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="/articles/2021/pyplot-tutorial.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2021-01-25 00:00:00-08:00"/>
+<meta property="article:modified_time" content="2021-01-25 00:00:00-08:00"/>
+<meta property="article:author" content="/author/cmsato09.html">
+<meta property="article:section" content="matplotlib"/>
+<meta property="article:tag" content="matplotlib"/>
+<meta property="article:tag" content="pyplot"/>
+<meta property="article:tag" content="tutorial"/>
+<meta property="og:image" content="/images/rook_clipart.png">
+
+  <title>Novice Programmer Journey from Zero &ndash; Matplotlib pyplots tutorial</title>
+
+</head>
+<body class="light-theme">
+  <aside>
+    <div>
+      <a href="">
+        <img src="/images/rook_clipart.png" alt="Novice Programmer Journey from Zero" title="Novice Programmer Journey from Zero">
+      </a>
+
+      <h1>
+        <a href="">Novice Programmer Journey from Zero</a>
+      </h1>
+
+<p>beginning a programming blog</p>
+
+      <nav>
+        <ul class="list">
+
+
+              <li>
+                <a target="_self"
+                   href="/pages/about.html#about">
+                  ABOUT
+                </a>
+              </li>
+
+            <li>
+              <a target="_self" href="https://getpelican.com/" >Pelican</a>
+            </li>
+            <li>
+              <a target="_self" href="https://www.python.org/" >Python.org</a>
+            </li>
+            <li>
+              <a target="_self" href="https://palletsprojects.com/p/jinja/" >Jinja2</a>
+            </li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+          <li>
+            <a  class="sc-You can add links in your config file" href="#" target="_blank">
+              <i class="fab fa-You can add links in your config file"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="sc-Another social link" href="#" target="_blank">
+              <i class="fab fa-Another social link"></i>
+            </a>
+          </li>
+      </ul>
+    </div>
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href="">Home</a>
+
+      <a href="/archives.html">Archives</a>
+      <a href="/categories.html">Categories</a>
+      <a href="/tags.html">Tags</a>
+
+
+    </nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="pyplot-tutorial">Matplotlib pyplots tutorial</h1>
+    <p>
+      Posted on Mon 25 January 2021 in <a href="/category/matplotlib.html">matplotlib</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <h3>Post #15 Pyplot tutorial</h3>
+<p>I actually learned how to use some of the basics of pyplot last week, but this blog post is a little delayed due to the previous long Pelican posts.<br>
+For my current job, we are creating plots from csv files and would like to display them in a django website. I have started to learn the basics of creating plots from a <a href="https://www.youtube.com/playlist?list=PLfUqlAm59b2uqQ9dnNQLYwAtcPX2noGCQ">youtube tutorial series</a> covering matplotlib by Corey Schafer.</p>
+<p>The tutorial series covered the following graph types:</p>
+<ul>
+<li>
+<p>Line plot</p>
+</li>
+<li>
+<p>Bar graph</p>
+</li>
+<li>
+<p>Pie chart</p>
+</li>
+<li>
+<p>Stackplot</p>
+</li>
+<li>
+<p>Histogram</p>
+</li>
+<li>
+<p>Scatterplot</p>
+</li>
+</ul>
+<p>He also covered different arguments associated with the graphs such as color, linewidth, labels, style, etc. as well as graph basics like x and y axis label, title, gridlines, and legends.</p>
+<p>This tutorial only covered the basics. I realized these things are difficult to program into a python file and how much Microsoft Excel or JMP makes it easier for everyday people without coding skills to make computer graphs. I've come to appreciate those programs a little more. But, I belive knowing how to use matplotlib in python will allow me to create graphs with python scripts, help in the long-run in understanding how to program, and automate making graphs. I mean I could automate in Excel with VBA, but then I would have to learn VBA.  </p>
+<p>We've also started to look at how to make 3d scatter and line plots as we want to compare multiple datasets. This should help us visualize and compare the data we are obtaining. </p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="/tag/matplotlib.html">matplotlib</a>
+      <a href="/tag/pyplot.html">pyplot</a>
+      <a href="/tag/tutorial.html">tutorial</a>
+    </p>
+  </div>
+
+
+
+
+
+</article>
+
+    <footer>
+<p>&copy;  </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Novice Programmer Journey from Zero ",
+  "url" : "",
+  "image": "/images/rook_clipart.png",
+  "description": ""
+}
+</script>
+
+
+</body>
+</html>

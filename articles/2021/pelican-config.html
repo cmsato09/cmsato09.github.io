@@ -192,8 +192,8 @@ The final section is the html file name. I wasn't sure what 'slug' meant and had
 <h5>Publish to Github pages</h5>
 <p>Saving all your work in Github and hosting on Github is the goal here and it was a bit confusing to me. At first, I thought the markdown files were the webpages, until I figured out the html pages in the output was being displayed in the preview. So do you save everything onto your github.io repository? Not exactly. Documentation has a section on <a href="https://docs.getpelican.com/en/latest/tips.html?highlight=github%20pages#publishing-to-github">publishing on Github</a>. They recommend you to push the contents of the output directory into a gh-pages branch in the repository. <br>
 Documentation says to use <code>ghp-import</code> module. The following commands in the command line after html file generation with <code>pelican</code> can help. I followed the 'Project Pages' instructions since I had problems with using SSH required in the 'User Pages' instructions. I don't know why, but it just didn't work. </p>
-<div class="highlight"><pre><span></span><code><span class="n">ghp</span><span class="o">-</span><span class="kn">import</span> <span class="nn">output</span> <span class="o">-</span><span class="n">b</span> <span class="n">gh</span><span class="o">-</span><span class="n">pages</span> <span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;</span>
-<span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">gh</span><span class="o">-</span><span class="n">pages</span><span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+<div class="highlight"><pre><span></span><code><span class="n">ghp</span><span class="o">-</span><span class="kn">import</span> <span class="nn">output</span> <span class="o">-</span><span class="n">b</span> <span class="n">gh</span><span class="o">-</span><span class="n">pages</span>
+<span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">gh</span><span class="o">-</span><span class="n">pages</span>
 </code></pre></div>
 
 
