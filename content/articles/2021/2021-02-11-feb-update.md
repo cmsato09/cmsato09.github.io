@@ -15,7 +15,7 @@ I've been working on a couple different topics these past couple of weeks and no
 Here are some of the things I've been learning.
 
 #### Pandas with Python with Corey Schafer
-In my previous post (#15), I how to make various plot with matplotlib. To make these plots, I was using a csv file. To get the csv data to plot, the instructor was using only a couple of pandas functions. To learn more on how to use pandas, I watched the same instructors [youtube tutorial on pandas](https://www.youtube.com/watch?v=ZyhVh-qRZPA&list=PL-osiE80TeTsWmV9i9c58mdDCSskIFdDS). I did not go through all of the video lessons, but it has helpful so far. 
+In my previous post (#15), I learned how to make various plots with matplotlib. To make these plots, I was using a csv file. To get the csv data to plot, the instructor was using only a couple of pandas functions. To learn more on how to use pandas, I watched the same instructors [youtube tutorial on pandas](https://www.youtube.com/watch?v=ZyhVh-qRZPA&list=PL-osiE80TeTsWmV9i9c58mdDCSskIFdDS). I did not go through all of the video lessons, but it has helpful so far. 
 So far, the topics I learned from the tutorials are on dataframe and series basics, indices, and filtering. There's much more to learn, but the filtering was the main thing I wanted to learn so I would be able to create multiple plots of series in matplotlib. I'm sure there are better ways of creating multiple plots from a csv and I'll learn those in the future. 
 
 #### Data Structures and Algorithms
