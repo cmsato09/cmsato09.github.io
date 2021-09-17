@@ -41,34 +41,53 @@ and I realize I have a time-sink problem.
 The first step to solving any problem is to admit you have a problem and identify them.  
 
 Current problems when trying to learn:
+
 - Easily sidetracked (even when writing this post I've started, stopped, and continued multiple times)
+    
     - Reddit, reading the news, watching Netflix are sources of distraction
+    
 - Trying to multi-task topics 
+    
     - I have found I am very good at starting things, but not keep up with it during this programming journey.
+
 - Not consistently learning or practicing everyday
+    
     - It is better to learn one hour every day instead of cramming seven hours in one day
+
 - Not using the tools I've learned
     - I've learned how to use SQL and little of pandas and matplotlib, but haven't actively practiced it. 
 
 ### Tackling the problems
-What can I do to fix these problems and find time to program? 
+What can I do to fix these problems and find time to program?
+
 - To Do list
+    
     - I've found that keeping a written To Do list has helped in doing chores around the house. 
     I would do these task the day I put it on my list. Physically crossing off list items is satisfying
+    
     - A written To Do list for programming tasks and goals was a little difficult to keep track of and 
     typing it out was much easier to add in details and edit due dates. I've started to use a program called Kanban Tasker
     listed as a free app on the Microsoft Store. It looks like a stripped down Jira.
+
 - Budget time
+
     - Budget time on a calendar. Haven't tried a strict schedule yet, but it is an option. I would
       rather keep my schedule flexible
+
     - Pomodoro timer -- I've tried it a couple of times, but haven't consistently used it. 
       Still get distracted by the list of major distractions above
+
 - Limit time-sink activities
+
     - Could I limit myself to one episode of Criminal Minds? The more important question is do I have the will to?
+
 - Sleep less, exercise more
+
     - Probably not the best advice to sleep less. Still need about 7 hours of sleep. 
       Exercising more increases stamina and alertness/awakeness.
+
 - Active learning by doing a project
+
     - What's the point of learning from a course or tutorial if I don't use it? 
       I've started a simple Django project to get myself familiar with its framework. 
       More details about this project in the next post. 
