@@ -4,7 +4,7 @@ date: 2021-09-17
 modified: 2021-09-17
 category: Django
 tags: django
-slug: 
+slug: starting-django
 author: cmsato09
 status: published
 ---
