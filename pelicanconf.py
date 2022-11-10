@@ -5,7 +5,10 @@ AUTHOR = 'cmsato09'
 SITENAME = 'Novice Programmer Journey from Zero'
 SITETITLE = SITENAME
 SITESUBTITLE = 'beginning a programming blog'
-SITEURL = ''
+SITEURL = 'https://cmsato09.github.io'
+
+# comment out above siteurl and uncomment the other siteurl below when testing locally
+# SITEURL = 'https://localhost:8000'
 
 PATH = 'content'
 
@@ -43,9 +46,11 @@ LINKS = (('Pelican', 'https://getpelican.com/'),
 SOCIAL = (('You can add links in your config file', '#'),
           ('Another social link', '#'),)
 
-MENUITEMS = (('Archives', '/archives.html'),
-            ('Categories', '/categories.html'),
-	    ('Tags', '/tags.html'),)
+MENUITEMS = (
+        ('Archives', '/archives.html'),
+        ('Categories', '/categories.html'),
+	    ('Tags', '/tags.html'),
+        )
 
 DEFAULT_PAGINATION = 20
 
