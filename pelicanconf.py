@@ -5,10 +5,10 @@ AUTHOR = 'cmsato09'
 SITENAME = 'Novice Programmer Journey from Zero'
 SITETITLE = SITENAME
 SITESUBTITLE = 'beginning a programming blog'
-SITEURL = 'https://cmsato09.github.io'
+# SITEURL = 'https://cmsato09.github.io'
 
 # comment out above siteurl and uncomment the other siteurl below when testing locally
-# SITEURL = 'https://localhost:8000'
+SITEURL = 'https://localhost:8000'
 
 PATH = 'content'
 

@@ -1,9 +1,9 @@
 ---
 title: Hit Restart
 date: 2022-11-22
-modified: 
+modified: 2022-11-22
 category: learning
-tags: pelican, pybites, 
+tags: 
 slug: 2022-update
 author: cmsato09
 status: draft
@@ -18,64 +18,47 @@ and felt bad about myself since I did absolutely nothing of what I wrote.
 
 ## Update from then to now
 
-I have been relatively quiet on the coding front and honestly, I don't know 
+I have been relatively quiet on the coding front and honestly, I'm not sure
 what happened. I'm trying to piece together what I've done since September 2021
-and I can't remember anything so I've been looking through my Pycharm projects 
-to see what files are there and through my sparse Github commit history. 
+and I don't remember anything significant, therefore, I've been looking through
+my Pycharm projects to see what files are there and through my sparse Github 
+commit history. 
 
-It's that bad.
+It's pretty bad. Here's the run-down:
 
 - I did not totally finish the Introduction to HTML5 and CSS3 from freeCodeCamp 
 [Post #18]({content/articles/2021}/2021-09-19-intro-to-html5-and-css3.md). 
 I think I just lost interest in the small projects that they had.
 
+
 - The Django project concerning the Dragon Warrior Monsters database 
 [Post #17]({content/articles/2021/}2021-09-17-dqmdatabase.md) hasn't gotten 
-anywhere at all. 
+anywhere at all, but it has been on my radar.
 
-- Flask tutorial
 
-- minesweeper tutorial
+- Flask tutorial (July 2022)
+  - A [ToDo app](https://www.youtube.com/watch?v=Z1RJmh_OqeA) for Flask again 
+  with freeCodeCamp
+  - I was trying to learn Flask since it seemed like a better framework for a 
+  read only database for the Django app idea. 
+  - Didn't even try making another Flask app after doing the tutorial
+
+
+- [minesweeper tutorial](https://www.freecodecamp.org/news/object-oriented-programming-with-python-code-a-minesweeper-game/) (July 2022)
+  - Again, a freeCodeCamp tutorial, originally by JimShapedCoding
+  - Used Tkinter to create a minesweeper game and learn about OOP
+  - I was able to improve upon on the initial tutorial with recursion and other
+  QoL improvements to make it look like the original game. 
+  - Kind of proud of this one, although it can do some refactoring. See it in 
+  my [github](https://github.com/cmsato09/minesweeper_fcc)
+
 
 - leetcode run
+  - I had a good leetcode run, where I did at least try to solve one problem 
+  each day from the middle of July to the end of August.
 
 I'm like 1 for 5 in terms of wins in projects and did somewhat OK with 
-learning data structures and algorithms. 
+learning data structures and algorithms while doing leetcode and reading 
+through various textbooks and online sources.
 
-It just didn't continue and that's the problem. 
-
-## Pybites Developer Mindset
-
-I've mentioned the Pybites podcast before in [#17 Persistence]({content/articles/2021}/2021-08-22-aug-update-persistence.md). Pybites was started by Bob Belderbos
-and Julian Sequeira as a python blog and now has become something more. They 
-offer bite-size python exercises similar to leetcode with pythonic answers and
-explanations, several python courses, a podcast, and a coaching program. 
-
-### My introduction to Pybites
-
-I think my first contact with Pybites was with a Humble Bundle 'Learn Python' 
-software bundle that I bought in the summer of 2020. 
-
-Humble Bundle is a PC game selling website where they donate proceeds to 
-various charities, but they also sold e-book and software bundles 
-related to coding.
-
-That particular bundle included Pybites "newbie bytes." It gave limited access 
-to their leetcode style python coding exercise website. For full access to 
-their website required a monthly subscription and I wasn't interested in it at 
-the time.
-
-### The Podcast
-
-Fast forward to sometime around spring of 2021, I noticed Pybites had started a
-podcast. I would listen to it from time to time and really liked their content
-and dynamic. Julian comes on as the enthusiastic one, while Bob was 
-more monotone in speech and style (They remind me of Adam Savage and Jaime 
-Hyneman from Mythbusters). Both are incredibly passionate about python 
-coding.
-
-The difference between the Pybites podcast with other python podcasts is the 
-focus on the "Developer's Mindset" instead of the technical aspects of python. 
-I did not know how vital mindset was until more recently. 
-
-## Joining PDM
+My projects didn't continue and that's the problem. ***I didn't have a specific goal.***
