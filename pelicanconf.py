@@ -2,13 +2,13 @@
 # -*- coding: utf-8 -*- #
 
 AUTHOR = 'cmsato09'
-SITENAME = 'Novice Programmer Journey from Zero'
+SITENAME = 'Rookie Coding ~ Journey as a Novice Programmer'
 SITETITLE = SITENAME
-SITESUBTITLE = 'beginning a programming blog'
-# SITEURL = 'https://cmsato09.github.io'
+SITESUBTITLE = 'The start of a programming blog'
+SITEURL = 'https://cmsato09.github.io'
 
 # comment out above siteurl and uncomment the other siteurl below when testing locally
-SITEURL = 'https://localhost:8000'
+# SITEURL = 'http://localhost:8000'
 
 PATH = 'content'
 
