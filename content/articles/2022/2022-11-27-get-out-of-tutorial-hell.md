@@ -11,10 +11,9 @@ status: draft
 
 # Post #21 How do you get out of tutorial hell?
 
-
 ## Pybites Developer Mindset
 
-I've mentioned the Pybites podcast before in [#17 Persistence]({content/articles/2021}/2021-08-22-aug-update-persistence.md). 
+I've mentioned the Pybites podcast before in [#17 Persistence]({/articles/2021/persistence-update). 
 Pybites was started by Bob Belderbos and Julian Sequeira as a python blog and 
 now has become something more. They offer bite-size python exercises similar to 
 leetcode with pythonic answers and explanations, several python courses, 
@@ -29,7 +28,7 @@ Humble Bundle is a PC game selling website where they donate proceeds to
 various charities, but they also sold e-book and software bundles 
 related to coding.
 
-That particular bundle included Pybites "newbie bytes." It gave limited access 
+That particular bundle included Pybites' "newbie bytes." It gave limited access 
 to their leetcode style python coding exercise website. For full access to 
 their website required a monthly subscription and I wasn't interested in it at 
 the time.
@@ -45,6 +44,7 @@ coding.
 
 The difference between the Pybites podcast with other python podcasts is the 
 focus on the "Developer's Mindset" instead of the technical aspects of python. 
-I did not know how vital mindset was until more recently. 
+I did not know how vital mindset was until more recently after I joined their
+coaching program, the [Python Developer's Mindset (PDM) program](https://pybit.es/catalogue/the-pdm-program/).
 
 ## Joining PDM
