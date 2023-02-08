@@ -5,10 +5,10 @@ AUTHOR = 'cmsato09'
 SITENAME = 'Rookie Coding ~ Journey as a Novice Programmer'
 SITETITLE = SITENAME
 SITESUBTITLE = 'The start of a programming blog'
-SITEURL = 'https://cmsato09.github.io'
+# SITEURL = 'https://cmsato09.github.io'
 
 # comment out above siteurl and uncomment the other siteurl below when testing locally
-# SITEURL = 'http://localhost:8000'
+SITEURL = 'http://localhost:8000'
 
 PATH = 'content'
 
@@ -38,18 +38,17 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Pelican', 'https://getpelican.com/'),
-         ('Python.org', 'https://www.python.org/'),
-         ('Jinja2', 'https://palletsprojects.com/p/jinja/'),)
+LINKS = (('Python Developer Mindset', 'https://pybit.es/catalogue/the-pdm-program/'),
+         )
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('github', 'https://github.com/cmsato09'),
+          ('linkedin', 'https://www.linkedin.com/in/christopher-m-sato/'),)
 
 MENUITEMS = (
         ('Archives', '/archives.html'),
         ('Categories', '/categories.html'),
-	    ('Tags', '/tags.html'),
+	('Tags', '/tags.html'),
         )
 
 DEFAULT_PAGINATION = 20
