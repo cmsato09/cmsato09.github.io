@@ -84,19 +84,11 @@ search for the solutions of those errors. Working with github pull requests was
 a first for me. 
 
 ### Mindset
-One very large thing I overlooked has been mindset. I've listened to a lot of 
-Pybites podcast concerning mindset, but I hadn't delibrately practiced good 
-mindset behaviors. 
+One very large thing I overlooked has been mindset. I've listened to a lot of Pybites podcast concerning mindset, but I hadn't delibrately practiced good mindset behaviors. 
 
-A big oversight I had was on goal-setting. I realized I went through life 
-without many clear goals. I was a go-with-the-flow kind of person, so I just 
-went with the cards that life dealt me. It doesn't have to be that way. 
+A big oversight I had was on goal-setting. I realized I went through life without many clear goals. I was a go-with-the-flow kind of person, so I just went with the cards that life dealt me. It doesn't have to be that way. 
 
-Julian mentioned in a video concerning goal-setting, "If you don't plan out 
-your goals, you could be pushed down a path you didn't want to go down. It's 
-extremely poor form to have that happen to you because it shows you're not 
-thinking about your future." Those words really made me think about the choices
-I've made and I decided to put more effort in making realistic goals. 
+Julian mentioned in a video concerning goal-setting, "If you don't plan out your goals, you could be pushed down a path you didn't want to go down. It's extremely poor form to have that happen to you because it shows you're not thinking about your future." Those words really made me think about the choices I've made and I decided to put more effort in making realistic goals. 
 
 One of those goals is to write more blogposts! Doesn't matter if no one reads 
 them. I want to be able to explain things well through my writing and that just 
