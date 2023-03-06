@@ -10,16 +10,16 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="https://cmsato09.github.io/theme/stylesheet/style.min.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost:8000/theme/stylesheet/style.min.css">
 
 
     <link id="pygments-light-theme" rel="stylesheet" type="text/css"
-          href="https://cmsato09.github.io/theme/pygments/github.min.css">
+          href="http://localhost:8000/theme/pygments/github.min.css">
 
 
-  <link rel="stylesheet" type="text/css" href="https://cmsato09.github.io/theme/font-awesome/css/fontawesome.css">
-  <link rel="stylesheet" type="text/css" href="https://cmsato09.github.io/theme/font-awesome/css/brands.css">
-  <link rel="stylesheet" type="text/css" href="https://cmsato09.github.io/theme/font-awesome/css/solid.css">
+  <link rel="stylesheet" type="text/css" href="http://localhost:8000/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="http://localhost:8000/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="http://localhost:8000/theme/font-awesome/css/solid.css">
 
 
 
@@ -35,7 +35,7 @@
 <meta property="og:title" content="Rookie Coding ~ Journey as a Novice Programmer"/>
 <meta property="og:description" content=""/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:url" content="https://cmsato09.github.io"/>
+<meta property="og:url" content="http://localhost:8000"/>
 <meta property="og:image" content="/images/rook_clipart.png">
 
 
@@ -46,12 +46,12 @@
 <body class="light-theme">
   <aside>
     <div>
-      <a href="https://cmsato09.github.io">
+      <a href="http://localhost:8000">
         <img src="/images/rook_clipart.png" alt="Rookie Coding ~ Journey as a Novice Programmer" title="Rookie Coding ~ Journey as a Novice Programmer">
       </a>
 
       <h1>
-        <a href="https://cmsato09.github.io">Rookie Coding ~ Journey as a Novice Programmer</a>
+        <a href="http://localhost:8000">Rookie Coding ~ Journey as a Novice Programmer</a>
       </h1>
 
 <p>The start of a programming blog</p>
@@ -62,13 +62,13 @@
 
               <li>
                 <a target="_self"
-                   href="https://cmsato09.github.io/pages/about.html#about">
+                   href="http://localhost:8000/pages/about.html#about">
                   ABOUT
                 </a>
               </li>
               <li>
                 <a target="_self"
-                   href="https://cmsato09.github.io/pages/portfolio.html#portfolio">
+                   href="http://localhost:8000/pages/portfolio.html#portfolio">
                   Portfolio
                 </a>
               </li>
@@ -86,7 +86,7 @@
             </a>
           </li>
           <li>
-            <a  class="sc-linkedin" href="https://www.linkedin.com/in/christopher-m-sato/" target="_blank">
+            <a  class="sc-linkedin" href="https://www.linkedin.com/in/chris-sato/" target="_blank">
               <i class="fab fa-linkedin"></i>
             </a>
           </li>
@@ -97,7 +97,7 @@
   <main>
 
     <nav>
-      <a href="https://cmsato09.github.io">Home</a>
+      <a href="http://localhost:8000">Home</a>
 
       <a href="/archives.html">Archives</a>
       <a href="/categories.html">Categories</a>
@@ -112,19 +112,40 @@
     <h1 id="portfolio">Portfolio</h1>
   </header>
   <div>
+<h2>Karate Kata Moveset Database (Django)</h2>
+<p>CRUD application displaying Shotokan Karate techniques and move set for each 
+<em>kata</em> or form. Also has profile login to limit who can add data. 
+Still a work-in-progress. </p>
+<p>My teacher had this idea of a karate kata database so he could find answers to 
+questions such as "How many attacks there are in front-stance compared to blocks in back-stance?"
+and I thought that would be a great Django project. </p>
+<p><a href="https://github.com/cmsato09/KarateDB-Django" target="_blank">Django Github repo</a></p>
+<p>Live demo on Railway at <a href="https://karatedb-django-production.up.railway.app" target="_blank">https://karatedb-django-production.up.railway.app</a></p>
+<p><img src="http://localhost:8000/images/Portfolio_image_KataDB_Django.JPG" alt="KataDB moveset table" title="KataDB moveset" style="width : 700px; height: auto;"></p>
 <h2>Dragon Quest Monsters Database (FastAPI+Streamlit)</h2>
-<p>This is the game information database for the Gameboy game called 'Dragon Warrior Monsters,' also known in Japan as 'Dragon Quest Monsters -- Terry's Wonderland. '
-It is a read-only database using SQLite modeled by FastAPI in the back-end and Streamlit for the front-end. </p>
-<p><a href="https://github.com/cmsato09/DQMonstersDB-API">FastAPI back-end Github repo</a></p>
-<p><a href="https://github.com/cmsato09/DQMonstersDB-streamlit">Streamlit front-end Github repo</a></p>
-<p>FastAPI deployed on Deta. Access the SwaggerUI docs at  <a href="https://em4lp8.deta.dev/docs">https://em4lp8.deta.dev/docs</a></p>
-<p>Streamlit deployed on Streamlit Cloud. Access at  <a href="https://dqmonstersdb.streamlit.app">https://dqmonstersdb.streamlit.app</a></p>
-<p><img alt="SwaggerUI image" src="https://cmsato09.github.io/images/Portfolio_image_FastAPI.JPG" title="SwaggerUI screenshot"></p>
-<p><img alt="Streamlit image" src="https://cmsato09.github.io/images/Portfolio_image_Streamlit.JPG" title="Streamlit screenshot"></p>
+<p>This is a game information database for the Gameboy game called 'Dragon Warrior Monsters,' also known in Japan as 'Dragon Quest Monsters - Terry's Wonderland.'</p>
+<p>I was incredibly frustrated with how some of the other web guides made me click
+through countless number of links to find what I needed, so I decided to make 
+my own. In hindsight, it could've been done with just HTML. </p>
+<p>This project is a read-only database using SQLite. 
+Back-end built using FastAPI + SQLModel and Streamlit for the front-end. 
+Project built with the help of the Pybites Developer Mindset Program, a coaching program 
+designed to help develop skills to become a better Python developer. </p>
+<p>Read about my experience building the project in a <a href="https://pybit.es/articles/my-experience-building-a-fastapi-streamlit-app/" target="_blank">Pybites blogpost.</a></p>
+<p><a href="https://github.com/cmsato09/DQMonstersDB-API" target="_blank">FastAPI back-end Github repo</a></p>
+<p><a href="https://github.com/cmsato09/DQMonstersDB-streamlit" target="_blank">Streamlit front-end Github repo</a></p>
+<p>FastAPI deployed on Deta. Access the SwaggerUI docs at <a href="https://em4lp8.deta.dev/docs" target="_blank">https://em4lp8.deta.dev/docs</a></p>
+<p>Streamlit deployed on Streamlit Cloud. Access at <a href="https://dqmonstersdb.streamlit.app" target="_blank">https://dqmonstersdb.streamlit.app</a></p>
+<p><img src="http://localhost:8000/images/Portfolio_image_DQM_FastAPI.JPG" alt="Swagger UI screenshot" title="SwaggerUI image" style="width : 700px; height: auto;">
+<img src="http://localhost:8000/images/Portfolio_image_DQM_Streamlit.JPG" alt="Streamlit screenshot" title="Streamlit image" style="width : 700px; height: auto;"></p>
 <h2>Minesweeper</h2>
-<p>Minesweeper game made with TKinter. Followed freeCodeCamp tutorial and made some improvements of my own to make it similar to the original game.</p>
-<p><a href="https://github.com/cmsato09/minesweeper_fcc">Minesweeper Github repo</a></p>
-<p><img alt="Minesweeper image" src="https://cmsato09.github.io/images/Portfolio_image_minesweeper.JPG"></p>  </div>
+<p>Minesweeper game made with TKinter</p>
+<p>Followed freeCodeCamp tutorial to learn object-oriented programming.</p>
+<p>I made some improvements of my own to make it similar to the original game by 
+changing up the interface and creating a difficulty option. </p>
+<p>This project also motivated me to beat minesweeper at the highest difficulty of 99 mines. </p>
+<p><a href="https://github.com/cmsato09/minesweeper_fcc" target="_blank">Minesweeper Github repo</a></p>
+<p><img src="http://localhost:8000/images/Portfolio_image_minesweeper.JPG" alt="Minesweeper screenshot" title="Minesweeper image"></p>  </div>
 </article>
 
     <footer>
@@ -142,7 +163,7 @@ Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a 
   "@context" : "http://schema.org",
   "@type" : "Blog",
   "name": " Rookie Coding ~ Journey as a Novice Programmer ",
-  "url" : "https://cmsato09.github.io",
+  "url" : "http://localhost:8000",
   "image": "/images/rook_clipart.png",
   "description": ""
 }
