@@ -5,10 +5,10 @@ AUTHOR = 'cmsato09'
 SITENAME = 'Rookie Coding ~ Journey as a Novice Programmer'
 SITETITLE = SITENAME
 SITESUBTITLE = 'The start of a programming blog'
-SITEURL = 'https://cmsato09.github.io'
+# SITEURL = 'https://cmsato09.github.io'
 
 # comment out above siteurl and uncomment the other siteurl below when testing locally
-# SITEURL = 'http://localhost:8000'
+SITEURL = 'http://localhost:8000'
 
 PATH = 'content'
 
@@ -43,7 +43,7 @@ LINKS = (('Python Developer Mindset', 'https://pybit.es/catalogue/the-pdm-progra
 
 # Social widget
 SOCIAL = (('github', 'https://github.com/cmsato09'),
-          ('linkedin', 'https://www.linkedin.com/in/christopher-m-sato/'),)
+          ('linkedin', 'https://www.linkedin.com/in/chris-sato/'),)
 
 MENUITEMS = (
         ('Archives', '/archives.html'),
