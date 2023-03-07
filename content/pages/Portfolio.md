@@ -1,13 +1,13 @@
 title: Portfolio
 
 ## Karate Kata Moveset Database (Django)
-CRUD application displaying Shotokan Karate techniques and move set for each 
-*kata* or form. Also has profile login to limit who can add data. 
-Still a work-in-progress. 
+This project is a CRUD application displaying Shotokan Karate techniques and 
+move set for each *kata* or form. It also has profile login to limit who can 
+add and update data. Still a work-in-progress. 
 
 My teacher had this idea of a karate kata database so he could find answers to 
-questions such as "How many attacks there are in front-stance compared to blocks in back-stance?"
-and I thought that would be a great Django project. 
+questions such as "How many attacks are there in front-stance compared to 
+blocks in back-stance?" and I thought that would be a great Django project. 
 
 <a href="https://github.com/cmsato09/KarateDB-Django" target="_blank">Django Github repo</a>
 
@@ -43,12 +43,12 @@ Streamlit deployed on Streamlit Cloud. Access at <a href="https://dqmonstersdb.s
 ## Minesweeper
 Minesweeper game made with TKinter
 
-Followed freeCodeCamp tutorial to learn object-oriented programming.
+I followed a freeCodeCamp tutorial to learn object-oriented programming.
 
 I made some improvements of my own to make it similar to the original game by 
 changing up the interface and creating a difficulty option. 
 
-This project also motivated me to beat minesweeper at the highest difficulty of 99 mines. 
+This project also motivated me to beat minesweeper at the highest difficulty of 99 mines for the first time.
 
 <a href="https://github.com/cmsato09/minesweeper_fcc" target="_blank">Minesweeper Github repo</a>
 
