@@ -1,72 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Navigation Bar -->
     <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
-        <div class="container mx-auto px-4 py-2 flex justify-between items-center">
-            <a href="#profile" class="text-xl font-bold">C.Sato Portfolio</a>
-            <button id="menu-toggle" class="block md:hidden text-gray-600 focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                </svg>
-            </button>
-            <ul id="mobile-menu" class="hidden md:flex space-x-4">
-                <li><a href="#about" class="text-gray-600 hover:text-blue-500">About</a></li>
-                <li><a href="#projects" class="text-gray-600 hover:text-blue-500">Projects</a></li>
-                <li><a href="#blog" class="text-gray-600 hover:text-blue-500">Blog</a></li>
-            </ul>
-        </div>
+      <div
+        class="container mx-auto px-4 py-2 flex justify-between items-center"
+      >
+        <a href="#profile" class="text-xl font-bold">C.Sato Portfolio</a>
+        <button
+          id="menu-toggle"
+          class="block md:hidden text-gray-600 focus:outline-none"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+        <ul id="mobile-menu" class="hidden md:flex space-x-4">
+          <li>
+            <a href="#about" class="text-gray-600 hover:text-blue-500">About</a>
+          </li>
+          <li>
+            <a href="#projects" class="text-gray-600 hover:text-blue-500"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="#blog" class="text-gray-600 hover:text-blue-500">Blog</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <!-- Profile Section -->
     <section id="profile" class="py-16 bg-gray-100">
-        <div class="container mx-auto px-4 text-center">
-            <div class="mb-8">
-                <img src="images/profile.jpg" alt="Profile Picture" class="w-64 h-64 rounded-full mx-auto shadow-md">
-            </div>
-            <div>
-                <h2 class="text-4xl font-bold mb-4">Chris Sato</h2>
-                <p class="text-gray-600 mb-6">Chemist → Software Engineer | Python | Fullstack Learner | Karate Practitioner</p>
-                <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6">
-                    <!-- GitHub -->
-                    <a href="https://github.com/cmsato09" target="_blank" class="flex items-center text-gray-600 hover:text-blue-500">
-                        <svg class="w-6 h-6 mr-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.207 11.387.6.113.793-.263.793-.587 0-.287-.012-1.237-.018-2.243-3.338.725-4.042-1.613-4.042-1.613-.546-1.387-1.333-1.755-1.333-1.755-1.09-.744.083-.729.083-.729 1.205.087 1.84 1.237 1.84 1.237 1.07 1.833 2.807 1.303 3.493.996.108-.775.42-1.303.763-1.603-2.665-.3-5.467-1.333-5.467-5.933 0-1.31.468-2.383 1.237-3.223-.123-.303-.537-1.523.117-3.177 0 0 1.01-.323 3.3 1.23.96-.267 1.987-.4 3.007-.404 1.02.004 2.047.137 3.007.404 2.29-1.553 3.3-1.23 3.3-1.23.654 1.654.24 2.874.117 3.177.768.84 1.237 1.913 1.237 3.223 0 4.61-2.807 5.63-5.48 5.923.432.373.816 1.1.816 2.217 0 1.603-.014 2.893-.014 3.287 0 .327.192.707.8.587C20.565 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/>
-                        </svg>
-                        <span>@cmsato09</span>
-                    </a>
-                    <!-- LinkedIn -->
-                    <a href="https://linkedin.com/in/chris-sato" target="_blank" class="flex items-center text-gray-600 hover:text-blue-500">
-                        <svg class="w-6 h-6 mr-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.027-3.063-1.867-3.063-1.867 0-2.153 1.459-2.153 2.967v5.7h-3v-10h2.881v1.367h.041c.401-.759 1.381-1.559 2.841-1.559 3.037 0 3.6 2.001 3.6 4.604v5.588z"/>
-                        </svg>
-                        <span>in/chris-sato</span>
-                    </a>
-                    <!-- Hashnode -->
-                    <a href="https://sato-san.hashnode.dev" target="_blank" class="flex items-center text-gray-600 hover:text-blue-500">
-                        <svg class="w-6 h-6 mr-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                            <path d="m22.351 8.019-6.37-6.37a5.63 5.63 0 0 0-7.962 0l-6.37 6.37a5.63 5.63 0 0 0 0 7.962l6.37 6.37a5.63 5.63 0 0 0 7.962 0l6.37-6.37a5.63 5.63 0 0 0 0-7.962zM12 15.953a3.953 3.953 0 1 1 0-7.906 3.953 3.953 0 0 1 0 7.906z"/>
-                        </svg>
-                        <span>sato-san.hashnode.dev</span>
-                    </a>
-                </div>
-            </div>
+      <div class="container mx-auto px-4 text-center">
+        <div class="mb-8">
+          <img
+            src="images/profile.jpg"
+            alt="Profile Picture"
+            class="w-64 h-64 rounded-full mx-auto shadow-md"
+          />
         </div>
+        <div>
+          <h2 class="text-4xl font-bold mb-4">Chris Sato</h2>
+          <p class="text-gray-600 mb-6">
+            Chemist → Software Engineer | Python | Fullstack Learner | Karate
+            Practitioner
+          </p>
+          <div
+            class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6"
+          >
+            <!-- GitHub -->
+            <a
+              href="https://github.com/cmsato09"
+              target="_blank"
+              class="flex items-center text-gray-600 hover:text-blue-500"
+            >
+              <svg
+                class="w-6 h-6 mr-2"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.207 11.387.6.113.793-.263.793-.587 0-.287-.012-1.237-.018-2.243-3.338.725-4.042-1.613-4.042-1.613-.546-1.387-1.333-1.755-1.333-1.755-1.09-.744.083-.729.083-.729 1.205.087 1.84 1.237 1.84 1.237 1.07 1.833 2.807 1.303 3.493.996.108-.775.42-1.303.763-1.603-2.665-.3-5.467-1.333-5.467-5.933 0-1.31.468-2.383 1.237-3.223-.123-.303-.537-1.523.117-3.177 0 0 1.01-.323 3.3 1.23.96-.267 1.987-.4 3.007-.404 1.02.004 2.047.137 3.007.404 2.29-1.553 3.3-1.23 3.3-1.23.654 1.654.24 2.874.117 3.177.768.84 1.237 1.913 1.237 3.223 0 4.61-2.807 5.63-5.48 5.923.432.373.816 1.1.816 2.217 0 1.603-.014 2.893-.014 3.287 0 .327.192.707.8.587C20.565 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"
+                />
+              </svg>
+              <span>@cmsato09</span>
+            </a>
+            <!-- LinkedIn -->
+            <a
+              href="https://linkedin.com/in/chris-sato"
+              target="_blank"
+              class="flex items-center text-gray-600 hover:text-blue-500"
+            >
+              <svg
+                class="w-6 h-6 mr-2"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.027-3.063-1.867-3.063-1.867 0-2.153 1.459-2.153 2.967v5.7h-3v-10h2.881v1.367h.041c.401-.759 1.381-1.559 2.841-1.559 3.037 0 3.6 2.001 3.6 4.604v5.588z"
+                />
+              </svg>
+              <span>in/chris-sato</span>
+            </a>
+            <!-- Hashnode -->
+            <a
+              href="https://sato-san.hashnode.dev"
+              target="_blank"
+              class="flex items-center text-gray-600 hover:text-blue-500"
+            >
+              <svg
+                class="w-6 h-6 mr-2"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="m22.351 8.019-6.37-6.37a5.63 5.63 0 0 0-7.962 0l-6.37 6.37a5.63 5.63 0 0 0 0 7.962l6.37 6.37a5.63 5.63 0 0 0 7.962 0l6.37-6.37a5.63 5.63 0 0 0 0-7.962zM12 15.953a3.953 3.953 0 1 1 0-7.906 3.953 3.953 0 0 1 0 7.906z"
+                />
+              </svg>
+              <span>sato-san.hashnode.dev</span>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- About Me Section -->
     <section id="about" class="py-16 bg-gray-100">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-4">About Me</h2>
-            <p class="text-gray-600 text-justify">Hi, my name is Chris. I'm a scientist transitioning to software engineering.  My journey into coding began while working in a lab that lacked a good database system. A colleague and I learned Python and built a lab information management system using the Django framework. That experience sparked my passion for software development.</p>
-            <p class="text-gray-600 text-justify">While Python remains my primary language, I've since expanded my focus to fullstack engineering and core programming concepts. I want to truly understand how many of the technologies and products we use every day works behind the scenes.</p>
-        </div>
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-4">About Me</h2>
+        <p class="text-gray-600 text-justify">
+          Hi, my name is Chris. I'm a scientist transitioning to software
+          engineering. My journey into coding began while working in a lab that
+          lacked a good database system. A colleague and I learned Python and
+          built a lab information management system using the Django framework.
+          That experience sparked my passion for software development.
+        </p>
+        <p class="text-gray-600 text-justify">
+          While Python remains my primary language, I've since expanded my focus
+          to fullstack engineering and core programming concepts. I want to
+          truly understand how many of the technologies and products we use
+          every day works behind the scenes.
+        </p>
+      </div>
     </section>
 
     <!-- Skills Section -->
@@ -76,132 +156,274 @@
     <!-- Projects Section -->
     <section id="projects" class="py-16 bg-gray-100">
       <div class="container mx-auto px-4">
-          <h2 class="text-3xl font-bold text-center mb-8">Projects</h2>
-  
-          <!-- Project 1 -->
-          <div class="mb-16">
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                  <div>
-                      <img src="images/fastapi-screenshot-1.jpg" alt="FastAPI project" class="w-full h-auto rounded shadow-md">
-                  </div>
-                  <div>
-                      <h3 class="text-2xl font-bold mb-4">Game Info API with FastAPI</h3>
-                      <p class="text-gray-600 mb-4">Designed and implemented a RESTful API to handle game data. Built with FastAPI, SQLModel/SQLAlchemy, and SQLite. Deployed on Google Cloud Run.</p>
-                      <div class="flex flex-wrap gap-2 mb-4">
-                          <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">Python</span>
-                          <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">FastAPI</span>
-                          <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">SQLite</span>
-                          <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">SQLModel / SQLAlchemy</span>
-                      </div>
-                      <div class="flex gap-4">
-                          <a href="https://dqmonstersdb-api-743047725852.us-central1.run.app/docs" target="_blank" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors">Live Demo</a>
-                          <a href="https://github.com/cmsato09/DQMonstersDB-API" target="_blank" class="px-4 py-2 border border-gray-300 rounded hover:bg-gray-50 transition-colors">Source Code</a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-  
-          <!-- Project 2 -->
-          <div class="mb-16">
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                  <div>
-                      <img src="images/react-screenshot-2.jpg" alt="ReactJS project" class="w-full h-auto rounded shadow-md">
-                  </div>
-                  <div>
-                      <h3 class="text-2xl font-bold mb-4">Game Info Website with ReactJS</h3>
-                      <p class="text-gray-600 mb-4">Developed a responsive frontend with ReactJS and Radix UI to display game information details from the backend FastAPI. Focused on user-friendly navigation and clear data presentation. Followed Streamlit prototype as a guide when developing.</p>
-                      <div class="flex flex-wrap gap-2 mb-4">
-                          <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">ReactJS</span>
-                          <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">JavaScript</span>
-                          <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">TailwindCSS</span>
-                          <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">RadixUI</span>
-                      </div>
-                      <div class="flex gap-4">
-                          <a href="https://dqmonsters-db.vercel.app/" target="_blank" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors">Live Demo</a>
-                          <a href="https://github.com/cmsato09/DQMonstersDB-React" target="_blank" class="px-4 py-2 border border-gray-300 rounded hover:bg-gray-50 transition-colors">Source Code</a>
-                      </div>
-                  </div>
-              </div>
-          </div>
+        <h2 class="text-3xl font-bold text-center mb-8">Projects</h2>
 
-          <!-- Project 3 -->
-          <div class="mb-16">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                <div>
-                    <img src="images/streamlit-screenshot-2.jpg" alt="ReactJS project" class="w-full h-auto rounded shadow-md">
-                </div>
-                <div>
-                    <h3 class="text-2xl font-bold mb-4">Game Info Website MVP with Streamlit</h3>
-                    <p class="text-gray-600 mb-4">Initial prototype that laid the groundwork for the ReactJS application. Built with Streamlit and connects to the FastAPI backend via API calls.</p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">Python</span>
-                        <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">Streamlit</span>
-                    </div>
-                    <div class="flex gap-4">
-                        <a href="https://dqmonstersdb.streamlit.app/" target="_blank" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors">Live Demo</a>
-                        <a href="https://github.com/cmsato09/DQMonstersDB-streamlit" target="_blank" class="px-4 py-2 border border-gray-300 rounded hover:bg-gray-50 transition-colors">Source Code</a>
-                    </div>
-                </div>
+        <!-- Project 1 -->
+        <div class="mb-16">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+              <img
+                src="images/fastapi-screenshot-1.jpg"
+                alt="FastAPI project"
+                class="w-full h-auto rounded shadow-md"
+              />
             </div>
+            <div>
+              <h3 class="text-2xl font-bold mb-4">
+                Game Info API with FastAPI
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Designed and implemented a RESTful API to handle game data.
+                Built with FastAPI, SQLModel/SQLAlchemy, and SQLite. Deployed on
+                Google Cloud Run.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded"
+                  >Python</span
+                >
+                <span
+                  class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded"
+                  >FastAPI</span
+                >
+                <span
+                  class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded"
+                  >SQLite</span
+                >
+                <span
+                  class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded"
+                  >SQLModel / SQLAlchemy</span
+                >
+              </div>
+              <div class="flex gap-4">
+                <a
+                  href="https://dqmonstersdb-api-743047725852.us-central1.run.app/docs"
+                  target="_blank"
+                  class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors"
+                  >Live Demo</a
+                >
+                <a
+                  href="https://github.com/cmsato09/DQMonstersDB-API"
+                  target="_blank"
+                  class="px-4 py-2 border border-gray-300 rounded hover:bg-gray-50 transition-colors"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
-  
-      </div>
-  </section>
 
-  <!-- Open Source Contributions Section -->
-  <section id="open-source" class="py-16 bg-gray-100">
-    <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-8">Open-Source Contributions</h2>
+        <!-- Project 2 -->
+        <div class="mb-16">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+              <img
+                src="images/react-screenshot-2.jpg"
+                alt="ReactJS project"
+                class="w-full h-auto rounded shadow-md"
+              />
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold mb-4">
+                Game Info Website with ReactJS
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Developed a responsive frontend with ReactJS and Radix UI to
+                display game information details from the backend FastAPI.
+                Focused on user-friendly navigation and clear data presentation.
+                Followed Streamlit prototype as a guide when developing.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded"
+                  >ReactJS</span
+                >
+                <span
+                  class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded"
+                  >JavaScript</span
+                >
+                <span
+                  class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded"
+                  >TailwindCSS</span
+                >
+                <span
+                  class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded"
+                  >RadixUI</span
+                >
+              </div>
+              <div class="flex gap-4">
+                <a
+                  href="https://dqmonsters-db.vercel.app/"
+                  target="_blank"
+                  class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors"
+                  >Live Demo</a
+                >
+                <a
+                  href="https://github.com/cmsato09/DQMonstersDB-React"
+                  target="_blank"
+                  class="px-4 py-2 border border-gray-300 rounded hover:bg-gray-50 transition-colors"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="mb-16">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+              <img
+                src="images/streamlit-screenshot-2.jpg"
+                alt="ReactJS project"
+                class="w-full h-auto rounded shadow-md"
+              />
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold mb-4">
+                Game Info Website MVP with Streamlit
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Initial prototype that laid the groundwork for the ReactJS
+                application. Built with Streamlit and connects to the FastAPI
+                backend via API calls.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded"
+                  >Python</span
+                >
+                <span
+                  class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded"
+                  >Streamlit</span
+                >
+              </div>
+              <div class="flex gap-4">
+                <a
+                  href="https://dqmonstersdb.streamlit.app/"
+                  target="_blank"
+                  class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors"
+                  >Live Demo</a
+                >
+                <a
+                  href="https://github.com/cmsato09/DQMonstersDB-streamlit"
+                  target="_blank"
+                  class="px-4 py-2 border border-gray-300 rounded hover:bg-gray-50 transition-colors"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Open Source Contributions Section -->
+    <section id="open-source" class="py-16 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">
+          Open-Source Contributions
+        </h2>
         <!-- Open Source Project 1 -->
         <div class="mb-16">
-          <a href="https://github.com/PyBites-Open-Source/pybites-carbon" target="_blank" class="text-blue-600 hover:underline"><h3 class="text-2xl font-bold mb-4">pybites-carbon</h3></a>
-            <p class="text-gray-600 mb-4">pybites-carbon is a CLI tool that interfaces with carbon for generating code images, using Playwright for browser automation.</p>
-            <p class="text-gray-600 font-semibold mb-2">My Contributions:</p>
-            <ul class="list-disc list-inside text-gray-600 mb-4 space-y-2">
-                <li>
-                    Migrated the project from Selenium to Playwright, improving performance. 
-                    <a href="https://github.com/PyBites-Open-Source/pybites-carbon/pull/14" target="_blank" class="text-blue-600 hover:underline">View Pull Request</a>
-                </li>
-                <li>
-                    Integrated the uv package manager and updated the GitHub Actions to use it. 
-                    <a href="https://github.com/PyBites-Open-Source/pybites-carbon/pull/17" target="_blank" class="text-blue-600 hover:underline">View Pull Request</a>
-                </li>
-                <li>Updated the README to reflect the changes. <a href="https://github.com/PyBites-Open-Source/pybites-carbon/pull/22" target="_blank" class="text-blue-600 hover:underline">View Pull Request</a></li>
-            </ul>
-            <div class="flex flex-wrap gap-2 mb-4">
-                <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">Python</span>
-                <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">Playwright</span>
-                <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">uv package manager</span>
-            </div>
+          <a
+            href="https://github.com/PyBites-Open-Source/pybites-carbon"
+            target="_blank"
+            class="text-blue-600 hover:underline"
+            ><h3 class="text-2xl font-bold mb-4">pybites-carbon</h3></a
+          >
+          <p class="text-gray-600 mb-4">
+            pybites-carbon is a CLI tool that interfaces with carbon for
+            generating code images, using Playwright for browser automation.
+          </p>
+          <p class="text-gray-600 font-semibold mb-2">My Contributions:</p>
+          <ul class="list-disc list-inside text-gray-600 mb-4 space-y-2">
+            <li>
+              Migrated the project from Selenium to Playwright, improving
+              performance.
+              <a
+                href="https://github.com/PyBites-Open-Source/pybites-carbon/pull/14"
+                target="_blank"
+                class="text-blue-600 hover:underline"
+                >View Pull Request</a
+              >
+            </li>
+            <li>
+              Integrated the uv package manager and updated the GitHub Actions
+              to use it.
+              <a
+                href="https://github.com/PyBites-Open-Source/pybites-carbon/pull/17"
+                target="_blank"
+                class="text-blue-600 hover:underline"
+                >View Pull Request</a
+              >
+            </li>
+            <li>
+              Updated the README to reflect the changes.
+              <a
+                href="https://github.com/PyBites-Open-Source/pybites-carbon/pull/22"
+                target="_blank"
+                class="text-blue-600 hover:underline"
+                >View Pull Request</a
+              >
+            </li>
+          </ul>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded"
+              >Python</span
+            >
+            <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded"
+              >Playwright</span
+            >
+            <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded"
+              >uv package manager</span
+            >
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-  <section id="blog" class="py-16 bg-gray-100">
-    <div class="container mx-auto px-4">
+    <section id="blog" class="py-16 bg-gray-100">
+      <div class="container mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-8">Blog Articles</h2>
         <ul class="space-y-4">
           <li>
-              <a href="https://sato-san.hashnode.dev/start-using-uv" target="_blank" class="text-blue-600 hover:underline text-lg">
-                  Get Started with the uv Package Manager
-              </a>
-              <p class="text-gray-600 text-sm">I introduce common key commands to the uv package manager, a Python package management system written in Rust.</p>
+            <a
+              href="https://sato-san.hashnode.dev/start-using-uv"
+              target="_blank"
+              class="text-blue-600 hover:underline text-lg"
+            >
+              Get Started with the uv Package Manager
+            </a>
+            <p class="text-gray-600 text-sm">
+              I introduce common key commands to the uv package manager, a
+              Python package management system written in Rust.
+            </p>
           </li>
           <li>
-            <a href="https://pybit.es/articles/my-experience-building-a-fastapi-streamlit-app/" target="_blank" class="text-blue-600 hover:underline text-lg">
-                My Experience Building a FastAPI + Streamlit App
+            <a
+              href="https://pybit.es/articles/my-experience-building-a-fastapi-streamlit-app/"
+              target="_blank"
+              class="text-blue-600 hover:underline text-lg"
+            >
+              My Experience Building a FastAPI + Streamlit App
             </a>
-            <p class="text-gray-600 text-sm">In this guest blog post for Pybites, I share my experience building a fullstack web app during my time in the Pybites Developer Mindset Program. I walk through key challenges and lessons learned.</p>
+            <p class="text-gray-600 text-sm">
+              In this guest blog post for Pybites, I share my experience
+              building a fullstack web app during my time in the Pybites
+              Developer Mindset Program. I walk through key challenges and
+              lessons learned.
+            </p>
           </li>
         </ul>
-    </div>
-  </section>
+      </div>
+    </section>
 
-  <!-- Footer -->
-  <footer>
+    <!-- Footer -->
+    <footer>
       <!-- ...footer content... -->
-  </footer>
+    </footer>
 
-  <script src="js/main.js"></script>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>
