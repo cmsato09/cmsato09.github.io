@@ -34,42 +34,76 @@
   <body>
     <!-- Navigation Bar -->
     <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
-      <div
-        class="container mx-auto px-4 py-2 flex justify-between items-center"
-      >
-        <a href="#profile" class="text-xl font-bold">C.Sato Portfolio</a>
-        <button
-          id="menu-toggle"
-          class="block md:hidden text-gray-600 focus:outline-none"
-        >
-          <svg
-            class="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
+      <div class="container mx-auto px-4 py-2">
+        <!-- Top row with logo and toggle -->
+        <div class="flex justify-between items-center">
+          <a href="#profile" class="text-xl font-bold">C.Sato Portfolio</a>
+
+          <!-- Desktop menu - hidden on mobile -->
+          <ul class="hidden md:flex md:flex-row md:space-x-4">
+            <li>
+              <a href="#about" class="text-gray-600 hover:text-blue-500"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="#projects" class="text-gray-600 hover:text-blue-500"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a href="#blog" class="text-gray-600 hover:text-blue-500">Blog</a>
+            </li>
+          </ul>
+
+          <!-- Mobile menu button -->
+          <button
+            id="menu-toggle"
+            class="md:hidden text-gray-600 focus:outline-none"
+            aria-label="Toggle menu"
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16m-7 6h7"
-            ></path>
-          </svg>
-        </button>
-        <ul id="mobile-menu" class="hidden md:flex space-x-4">
-          <li>
-            <a href="#about" class="text-gray-600 hover:text-blue-500">About</a>
-          </li>
-          <li>
-            <a href="#projects" class="text-gray-600 hover:text-blue-500"
-              >Projects</a
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-          </li>
-          <li>
-            <a href="#blog" class="text-gray-600 hover:text-blue-500">Blog</a>
-          </li>
-        </ul>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile menu - expanded below with smooth transition -->
+        <div
+          id="mobile-menu"
+          class="md:hidden overflow-hidden transition-all duration-300 ease-in-out max-h-0"
+        >
+          <div class="pt-2 pb-1 border-t mt-2">
+            <ul class="flex flex-col items-end">
+              <li>
+                <a href="#about" class="text-gray-600 hover:text-blue-500"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a href="#projects" class="text-gray-600 hover:text-blue-500"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a href="#blog" class="text-gray-600 hover:text-blue-500"
+                  >Blog</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </nav>
 
@@ -446,6 +480,12 @@
       <!-- ...footer content... -->
     </footer>
 
+    <style>
+      /* Additional styles for smooth transitions */
+      #mobile-menu.expanded {
+        max-height: 200px; /* Adjust based on your content height */
+      }
+    </style>
     <script src="js/main.js"></script>
   </body>
 </html>
