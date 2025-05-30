@@ -214,6 +214,52 @@
       <div class="container mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-8">Projects</h2>
 
+        <div class="mb-16">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+              <img
+                src="images/KarateKataDB-screenshot.png"
+                alt="Karate Kata database project"
+                class="w-full h-auto rounded shadow-md"
+              />
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold mb-4">
+                Work in Progress -- Karate Kata Database with NextJS
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Work in progress CRUD app. My teacher wants a database of all techniques and movements in each Karate form to make queries like "How many punches in front stance are there?" The main bottleneck is getting all the data for each move in a form. Some movements in a form is a combination of two techniques or two or more consecutive techniques which doesn't play well with "one movement per database entry."
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded"
+                  >NextJS</span
+                >
+                <span
+                  class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded"
+                  >JavaScript</span
+                >
+                <span
+                  class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded"
+                  >TailwindCSS</span
+                >
+                <span
+                  class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded"
+                  >shadcn</span
+                >
+              </div>
+              <div class="flex gap-4">
+                <a
+                  href="https://github.com/cmsato09/KarateKata"
+                  target="_blank"
+                  class="px-4 py-2 border border-gray-300 rounded hover:bg-gray-50 transition-colors"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- Project 1 -->
         <div class="mb-16">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -232,6 +278,9 @@
                 Designed and implemented a RESTful API to handle game data.
                 Built with FastAPI, SQLModel/SQLAlchemy, and SQLite. Deployed on
                 Google Cloud Run.
+              </p>
+              <p class="text-gray-600 mb-4">
+                Main challenges to this project was figuring out how to implement a self-referencing data model and multiple foreign keys from the same table into a intermediate table. 
               </p>
               <div class="flex flex-wrap gap-2 mb-4">
                 <span
@@ -288,6 +337,9 @@
                 display game information details from the backend FastAPI.
                 Focused on user-friendly navigation and clear data presentation.
                 Followed Streamlit prototype as a guide when developing.
+              </p>
+              <p class="text-gray-600 mb-4">
+                Main challenges to this project was creating a UI that was pleasant to look at. The information was good, but presenting it is another matter. 
               </p>
               <div class="flex flex-wrap gap-2 mb-4">
                 <span
